@@ -1,0 +1,49 @@
+{
+  "name": "react-menu-aim",
+  "version": "1.0.1",
+  "description": "A React mixin version of Amazon's jQuery-menu-aim plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start test/karma.conf.js",
+    "build": "./node_modules/browserify/bin/cmd.js demo/js/app.js -d -t babelify -p [minifyify --no-map] -o demo/js/app.bundle.js",
+    "watch": "./node_modules/watchify/bin/cmd.js demo/js/app.js -t babelify -o demo/js/app.bundle.js -v -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonslyvia/react-menu-aim.git"
+  },
+  "keywords": [
+    "react",
+    "amazon",
+    "jquery-menu-aim",
+    "menu-aim"
+  ],
+  "author": "jasonslyvia <jasonslyvia@gmail.com> (http://undefinedblog.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonslyvia/react-menu-aim/issues"
+  },
+  "homepage": "https://github.com/jasonslyvia/react-menu-aim",
+  "peerDependencies": {
+    "react-dom": "^0.14.0 || ^15.0.0"
+  },
+  "devDependencies": {
+    "babelify": "~6.1.2",
+    "browserify": "~10.2.4",
+    "browserify-istanbul": "^0.2.1",
+    "chai": "^3.0.0",
+    "chai-spies": "^0.6.0",
+    "karma": "^0.12.37",
+    "karma-browserify": "^4.2.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.4.2",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "minifyify": "~7.0.2",
+    "mocha": "^2.2.5",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "watchify": "~3.2.3"
+  }
+}
